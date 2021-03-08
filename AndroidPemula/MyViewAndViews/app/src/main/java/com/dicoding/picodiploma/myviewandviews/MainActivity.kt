@@ -2,6 +2,7 @@ package com.dicoding.picodiploma.myviewandviews
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dicoding.myviewandviews.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,4 +11,4 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.title = "Google Pixel"
     }
-}c
+}
