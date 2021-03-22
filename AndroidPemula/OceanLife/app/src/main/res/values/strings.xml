@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OceanLife</string>
+    <string name="fish_name">Nama Ikan</string>
+    <string name="detail">Detail</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="about">About</string>
+    <string name="profile_name">Yuda Aditya</string>
+    <string name="profile_email">yudaaditya98@gmail.com</string>
+    <string name="rating">4.9</string>
+</resources>

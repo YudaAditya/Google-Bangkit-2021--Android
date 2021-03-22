@@ -1,4 +1,6 @@
+package com.dicoding.picodiploma.myrecyclerview
 import com.dicoding.picodiploma.myrecyclerview.R
+import Hero
 
 object HeroesData {
     private val heroNames = arrayOf("Ahmad Dahlan",
