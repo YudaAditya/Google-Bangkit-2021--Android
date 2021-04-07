@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".CategoryFragment">
+    tools:context=".CategoryFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -14,7 +15,7 @@
         android:text="@string/this_category" />
 
     <Button
-        android:id="@+id/btn_detail_categoty"
+        android:id="@+id/btn_detail_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/category_lifestyle" />
