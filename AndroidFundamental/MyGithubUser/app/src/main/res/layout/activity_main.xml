@@ -13,5 +13,9 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/item_row_user" />
 
-
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/json_text"-->
+<!--        android:text="halo"/>-->
 </RelativeLayout>
