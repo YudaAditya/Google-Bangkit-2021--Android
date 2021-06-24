@@ -13,7 +13,7 @@ import com.microdevrj.superellipse.custom_superellipse_views.SuperellipseImageVi
 import de.hdodenhof.circleimageview.CircleImageView
 
 class ListUserAdapter(private val listUser:ArrayList<User>) : RecyclerView.Adapter<ListUserAdapter.ListViewHolder>() {
-
+private lateinit var onItemClickCallback: OnItemClickCallback
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View =
@@ -44,6 +44,11 @@ class ListUserAdapter(private val listUser:ArrayList<User>) : RecyclerView.Adapt
     override fun getItemCount(): Int {
         return listUser.size
     }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback=onItemClickCallback
+    }
+
     inner class ListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvName: TextView = view.findViewById(R.id.tv_name)
         val tvUsername: TextView = view.findViewById(R.id.tv_username)
@@ -53,6 +58,10 @@ class ListUserAdapter(private val listUser:ArrayList<User>) : RecyclerView.Adapt
         val tvRepository: TextView = view.findViewById(R.id.tv_repository)
         val tvFollower: TextView = view.findViewById(R.id.tv_follower)
         val tvFollowing: TextView = view.findViewById(R.id.tv_following)
+    }
+
+    interface OnItemClickCallback{
+        fun onItemClicked(data: User)
     }
 
 }

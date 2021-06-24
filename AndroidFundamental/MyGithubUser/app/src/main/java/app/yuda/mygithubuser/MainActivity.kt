@@ -1,5 +1,6 @@
 package app.yuda.mygithubuser
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -63,5 +64,13 @@ class MainActivity : AppCompatActivity() {
         rvUser.layoutManager = LinearLayoutManager(this)
         val listUserAdapter= ListUserAdapter(userList)
         rvUser.adapter=listUserAdapter
+        listUserAdapter.setOnItemClickCallback(object :ListUserAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: User) {
+                val moveIntentDetail = Intent(this@MainActivity, UserDetailActivity::class.java)
+                moveIntentDetail.putExtra(UserDetailActivity.EXTRA_USER, data)
+                Log.i("USERLIST",data.toString())
+                startActivity(moveIntentDetail)
+            }
+        })
     }
 }
